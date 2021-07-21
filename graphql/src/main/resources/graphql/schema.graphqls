@@ -1,0 +1,11 @@
+type Query {
+    questionById(id: ID): Question
+    allQuestion: [Question]
+}
+
+type Question {
+    id: ID
+    title: String
+    content: String
+    userId: Int
+}
